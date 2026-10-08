@@ -1,0 +1,172 @@
+// Texto-fonte (português do Brasil). `items` segue a MESMA ordem de ./structure.ts e as chaves de `dims` não mudam.
+// Itens e categorias originais.
+
+import type { TestText } from '../../schema';
+
+const t: TestText = {
+  title: 'Suas forças',
+  desc: 'Descubra quais qualidades aparecem com mais naturalidade no seu dia a dia e como usá-las a seu favor.',
+  intro:
+    'Este questionário ajuda a identificar suas forças pessoais, ou seja, as qualidades que você usa com mais naturalidade e que costumam trazer energia e bons resultados. São 30 frases sobre dez forças, como curiosidade, persistência, empatia e criatividade. Para cada frase, indique o quanto ela descreve como você costuma agir, e não como gostaria de agir. Não há respostas certas: cada pessoa tem uma combinação própria de forças, e nenhuma é melhor que outra.',
+  scale: ['Discordo totalmente', 'Discordo', 'Neutro', 'Concordo', 'Concordo totalmente'],
+  items: [
+    'Quando um assunto novo surge em uma conversa, costumo pesquisar mais sobre ele depois.',
+    'Quando começo um projeto, costumo levá-lo até o fim, mesmo que fique difícil.',
+    'Antes de reagir ao comportamento de alguém, tento entender o que pode estar por trás dele.',
+    'Em trabalhos em grupo, costumo organizar quem vai fazer o quê.',
+    'Costumo encontrar formas diferentes de resolver problemas do dia a dia.',
+    'Mantenho uma lista ou uma agenda com o que preciso fazer.',
+    'Digo o que penso em uma reunião, mesmo quando minha opinião é diferente da maioria.',
+    'Consigo fazer as pessoas rirem, mesmo em momentos tensos.',
+    'Antes de tomar uma decisão importante, penso nas consequências a longo prazo.',
+    'Ofereço ajuda antes mesmo que alguém peça.',
+    'Faço muitas perguntas para entender como as coisas funcionam.',
+    'Um erro ou uma recusa não me faz desistir de algo que considero importante.',
+    'As pessoas costumam me procurar quando precisam conversar sobre algo que as preocupa.',
+    'Quando um grupo está sem direção, tomo a iniciativa de propor um caminho.',
+    'Gosto de combinar ideias de áreas diferentes para criar algo novo.',
+    'Antes de começar um projeto grande, divido o trabalho em etapas.',
+    'Encaro situações que me dão medo quando sei que elas são importantes.',
+    'Costumo ver o lado engraçado das situações, inclusive das que dão errado.',
+    'Evito correr riscos desnecessários, mesmo quando uma oportunidade parece tentadora.',
+    'Gosto de compartilhar o que sei com quem está começando.',
+    'Gosto de aprender coisas novas mesmo quando elas não têm uma utilidade imediata.',
+    'Consigo continuar uma tarefa longa mesmo quando ela fica cansativa.',
+    'Consigo imaginar como uma mesma situação é vivida de formas diferentes por cada pessoa.',
+    'Gosto de motivar outras pessoas a trabalharem juntas por um objetivo comum.',
+    'Quando o jeito habitual de fazer algo não funciona, logo penso em alternativas.',
+    'Sei onde estão meus documentos e arquivos importantes quando preciso deles.',
+    'Defendo uma pessoa que está sendo tratada com injustiça, mesmo que isso possa me trazer problemas.',
+    'Uso o bom humor para deixar o ambiente mais leve, no trabalho ou em casa.',
+    'Prefiro reunir as informações necessárias antes de assumir um compromisso.',
+    'Fico feliz em dedicar meu tempo a alguém que precisa, sem esperar nada em troca.',
+  ],
+  dims: {
+    curiosity: {
+      label: 'Curiosidade',
+      desc: 'Interesse genuíno em aprender, fazer perguntas e explorar assuntos, lugares e ideias novas.',
+      high: 'Você gosta de entender como as coisas funcionam e busca aprender por conta própria. Isso ajuda a se adaptar a mudanças e a encontrar informações que outras pessoas deixam passar. O ponto de atenção é começar muitos assuntos ao mesmo tempo e não aprofundar nenhum.',
+      low: 'Você tende a focar no que já conhece e no que tem utilidade prática imediata. Isso traz objetividade e ajuda a não se dispersar. O ponto de atenção é perder oportunidades de aprendizado que só aparecem quando você explora um pouco além do necessário.',
+      tips: [
+        'Escolha um tema por mês para estudar com calma, com um livro, um curso ou um podcast.',
+        'Em conversas, faça pelo menos uma pergunta a mais do que faria normalmente.',
+        'Anote as dúvidas que surgirem durante a semana e reserve um momento para pesquisá-las.',
+      ],
+      examples: ['Aprender uma habilidade ou ferramenta nova', 'Investigar a causa de um problema', 'Conhecer pessoas e culturas diferentes', 'Começar em uma área desconhecida'],
+    },
+    persistence: {
+      label: 'Persistência',
+      desc: 'Capacidade de continuar um esforço até o fim, mesmo diante de obstáculos, cansaço ou resultados que demoram a aparecer.',
+      high: 'Você costuma terminar o que começa e não desiste com facilidade diante de dificuldades. Isso é valioso em projetos longos e em metas que exigem constância. O ponto de atenção é insistir em um caminho que já mostrou não funcionar, quando mudar de estratégia seria mais sensato.',
+      low: 'Você tende a mudar de atividade quando algo deixa de fazer sentido ou fica difícil demais. Isso traz flexibilidade e evita gastar energia em caminhos sem futuro. O ponto de atenção é abandonar projetos importantes pouco antes de eles começarem a dar resultado.',
+      tips: [
+        'Divida metas longas em etapas curtas e comemore cada etapa concluída.',
+        'Antes de desistir de algo, pergunte-se se o problema é o objetivo ou apenas a estratégia escolhida.',
+        'Registre seu progresso em um caderno ou aplicativo para enxergar o quanto você já avançou.',
+      ],
+      examples: ['Projetos longos, com resultados que demoram a aparecer', 'Estudar para uma prova ou certificação difícil', 'Recomeçar depois de um fracasso', 'Manter um hábito saudável ao longo do tempo'],
+    },
+    empathy: {
+      label: 'Empatia',
+      desc: 'Capacidade de perceber o que outras pessoas sentem e de compreender o ponto de vista delas.',
+      high: 'Você percebe com facilidade como as pessoas estão e procura entender os motivos delas antes de julgar. Isso cria confiança e faz com que os outros se sintam compreendidos ao seu lado. O ponto de atenção é absorver os problemas alheios a ponto de se esgotar.',
+      low: 'Você tende a olhar primeiro para os fatos e para o problema a ser resolvido. Isso ajuda a manter a objetividade em situações carregadas de emoção. O ponto de atenção é parecer distante sem querer ou não notar quando alguém precisa de apoio.',
+      tips: [
+        'Em conversas importantes, repita com suas palavras o que a outra pessoa disse antes de responder.',
+        'Pergunte como a pessoa está se sentindo antes de oferecer uma solução.',
+        'Se você costuma absorver muito as emoções alheias, reserve um momento para cuidar de si depois de conversas difíceis.',
+      ],
+      examples: ['Apoiar alguém em um momento difícil', 'Atender clientes ou pacientes', 'Ajudar duas pessoas a resolverem um desentendimento', 'Dar um retorno delicado a alguém'],
+    },
+    leadership: {
+      label: 'Liderança',
+      desc: 'Capacidade de organizar, orientar e motivar pessoas em direção a um objetivo comum.',
+      high: 'Você costuma tomar a iniciativa quando um grupo precisa de direção e sabe distribuir tarefas. As pessoas tendem a confiar em você para coordenar projetos. O ponto de atenção é centralizar decisões e deixar pouco espaço para que outras pessoas também assumam responsabilidades.',
+      low: 'Você prefere contribuir com seu trabalho e seu conhecimento sem estar à frente do grupo. Isso faz de você alguém que colabora bem e apoia quem está coordenando. O ponto de atenção é deixar de propor ideias ou caminhos que poderiam ajudar o grupo, esperando que outra pessoa tome a iniciativa.',
+      tips: [
+        'Assuma a coordenação de um projeto pequeno e com prazo curto para praticar.',
+        'Em reuniões, termine sempre combinando quem faz o quê e até quando.',
+        'Se você já lidera com frequência, experimente delegar uma decisão importante e acompanhar de perto.',
+      ],
+      examples: ['Coordenar um projeto em grupo', 'Organizar um evento ou uma ação na comunidade', 'Orientar uma pessoa que está começando', 'Tomar decisões em momentos de incerteza'],
+    },
+    creativity: {
+      label: 'Criatividade',
+      desc: 'Capacidade de gerar ideias originais e encontrar soluções diferentes das habituais.',
+      high: 'Você costuma enxergar alternativas onde outras pessoas veem apenas um caminho. Isso ajuda a resolver problemas novos e a melhorar o que sempre foi feito do mesmo jeito. O ponto de atenção é se entusiasmar com cada nova ideia e ter dificuldade de levar as anteriores até o fim.',
+      low: 'Você prefere métodos já testados e soluções que se mostraram confiáveis. Isso traz segurança e consistência ao seu trabalho. O ponto de atenção é descartar ideias diferentes cedo demais, antes de avaliar o que elas podem oferecer.',
+      tips: [
+        'Antes de escolher uma solução, liste pelo menos três alternativas diferentes.',
+        'Busque referências fora da sua área: muitas boas ideias surgem da combinação de assuntos distantes.',
+        'Reserve um tempo na semana para testar uma ideia nova sem se preocupar com o resultado.',
+      ],
+      examples: ['Resolver um problema que não tem solução pronta', 'Criar um produto, um conteúdo ou uma campanha', 'Melhorar um processo que sempre foi feito do mesmo jeito', 'Fazer muito com poucos recursos'],
+    },
+    organization: {
+      label: 'Organização',
+      desc: 'Capacidade de planejar, estruturar tarefas e manter as coisas em ordem para cumprir compromissos.',
+      high: 'Você costuma planejar com antecedência, controlar prazos e saber onde está cada coisa. Isso traz tranquilidade e faz com que as pessoas confiem nos seus compromissos. O ponto de atenção é se sentir desconfortável com imprevistos ou gastar tempo demais organizando em vez de fazendo.',
+      low: 'Você lida com as tarefas de forma mais flexível e se adapta bem quando os planos mudam. Isso ajuda em ambientes dinâmicos e cheios de imprevistos. O ponto de atenção é perder prazos ou informações importantes por não ter um sistema simples para acompanhá-los.',
+      tips: [
+        'Use uma única lista para todas as suas tarefas, em vez de anotações espalhadas.',
+        'Reserve dez minutos no fim do dia para revisar o que foi feito e preparar o dia seguinte.',
+        'Se você já planeja muito, deixe uma parte da agenda livre para imprevistos.',
+      ],
+      examples: ['Planejar uma viagem, uma mudança ou um evento', 'Acompanhar vários prazos ao mesmo tempo', 'Organizar as finanças da casa ou de um projeto', 'Colocar ordem em um processo confuso'],
+    },
+    courage: {
+      label: 'Coragem',
+      desc: 'Disposição para agir, falar ou defender o que é certo mesmo diante de medo, risco ou desaprovação.',
+      high: 'Você costuma enfrentar situações difíceis e dizer o que pensa, mesmo quando isso causa desconforto. Isso ajuda a defender ideias e pessoas e a dar passos importantes na vida. O ponto de atenção é agir rápido demais ou subestimar riscos por não querer recuar.',
+      low: 'Você tende a avaliar bem os riscos antes de se expor e evita conflitos desnecessários. Isso traz cautela e ajuda a preservar suas relações e sua energia. O ponto de atenção é deixar de falar ou de agir em situações importantes por medo da reação dos outros.',
+      tips: [
+        'Comece com pequenos atos de coragem, como dar sua opinião em uma reunião ou fazer uma pergunta em público.',
+        'Antes de uma situação difícil, pense no pior cenário realista e em como você lidaria com ele.',
+        'Lembre-se de que sentir medo é normal: coragem é agir apesar do medo, e não a ausência dele.',
+      ],
+      examples: ['Falar em público ou defender uma ideia diante de um grupo', 'Mudar de carreira ou de cidade', 'Dar uma notícia difícil', 'Defender alguém que está sendo tratado com injustiça'],
+    },
+    humor: {
+      label: 'Senso de humor',
+      desc: 'Capacidade de ver o lado leve das situações e de usar o humor para aproximar as pessoas.',
+      high: 'Você costuma encontrar graça no dia a dia e ajuda a deixar os ambientes mais leves. Isso aproxima as pessoas e alivia a tensão em momentos difíceis. O ponto de atenção é usar o humor para fugir de assuntos sérios ou fazer brincadeiras que nem todos recebem bem.',
+      low: 'Você tende a encarar as situações com seriedade e foco. Isso transmite confiança em momentos que pedem responsabilidade. O ponto de atenção é carregar tensão por tempo demais e perder a chance de tornar a rotina mais leve para você e para os outros.',
+      tips: [
+        'Observe o que faz você rir e reserve espaço para isso na sua semana.',
+        'Antes de fazer uma brincadeira, pense se o momento e as pessoas presentes estão abertos a ela.',
+        'Diante de um erro sem consequências graves, tente ver o lado engraçado antes de se cobrar.',
+      ],
+      examples: ['Deixar um grupo novo mais à vontade', 'Aliviar a tensão em uma reunião difícil', 'Ensinar algo de forma leve', 'Ajudar alguém a ver um problema com mais leveza'],
+    },
+    prudence: {
+      label: 'Prudência',
+      desc: 'Tendência a pensar antes de agir, avaliar riscos e considerar as consequências das escolhas.',
+      high: 'Você costuma refletir antes de decidir e pensa nas consequências a longo prazo. Isso evita erros caros e transmite segurança a quem depende de você. O ponto de atenção é demorar demais para decidir ou deixar passar oportunidades por excesso de cautela.',
+      low: 'Você tende a decidir com rapidez e a aproveitar as oportunidades assim que elas aparecem. Isso traz agilidade e disposição para experimentar. O ponto de atenção é assumir compromissos ou riscos sem ter as informações necessárias.',
+      tips: [
+        'Para decisões importantes, espere pelo menos uma noite antes de dar a resposta final.',
+        'Liste o que pode dar certo e o que pode dar errado antes de assumir um compromisso grande.',
+        'Se você costuma demorar a decidir, defina um prazo para a decisão e respeite-o.',
+      ],
+      examples: ['Decisões financeiras importantes', 'Assinar um contrato ou assumir um compromisso longo', 'Avaliar os riscos de um projeto', 'Situações que exigem segurança, como dirigir ou cuidar de crianças'],
+    },
+    generosity: {
+      label: 'Generosidade',
+      desc: 'Disposição para dedicar tempo, atenção, conhecimento ou recursos a outras pessoas, sem esperar retorno.',
+      high: 'Você costuma oferecer ajuda com naturalidade e gosta de ver as pessoas ao seu redor crescerem. Isso cria laços fortes e um ambiente de confiança. O ponto de atenção é dar tanto aos outros que suas próprias necessidades ficam sempre para depois.',
+      low: 'Você tende a concentrar sua energia nos seus próprios objetivos e responsabilidades. Isso ajuda a proteger seu tempo e a manter o foco. O ponto de atenção é deixar passar momentos em que uma pequena ajuda sua faria grande diferença para alguém.',
+      tips: [
+        'Ofereça uma ajuda pequena e específica por semana, como uma indicação, uma revisão ou uma explicação.',
+        'Compartilhe algo que você sabe fazer bem com alguém que está começando.',
+        'Se você ajuda muito os outros, reserve tempo na agenda também para as suas prioridades.',
+      ],
+      examples: ['Ensinar o que você sabe a quem está começando', 'Trabalho voluntário', 'Ajudar um colega sobrecarregado', 'Cuidar de alguém da família ou da comunidade'],
+    },
+  },
+  resultTitle: 'Suas principais forças',
+  resultIntro:
+    'Destacamos as três forças com as maiores pontuações. Elas indicam onde você tende a se sentir mais à vontade e a render mais. As forças com pontuação menor não são defeitos: são qualidades que aparecem menos hoje e que podem ser desenvolvidas, se fizer sentido para você.',
+  note: 'Este resultado é uma ferramenta de autoconhecimento baseada na sua própria percepção. Ele não é um teste psicológico validado e não substitui a avaliação de um profissional. Suas forças também podem mudar com o tempo e com as experiências que você vive.',
+};
+
+export default t;

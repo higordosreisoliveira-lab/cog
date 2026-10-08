@@ -1,0 +1,140 @@
+// values — Dutch translation of pt.ts
+import type { TestText } from '../../schema';
+
+const t: TestText = {
+  title: 'Werkwaarden',
+  desc: 'Begrijp wat voor jou het zwaarst weegt als je een baan, een loopbaan of een project kiest.',
+  intro:
+    'Deze vragenlijst helpt je te ontdekken wat je het meest belangrijk vindt in je werk, uit acht waarden zoals zingeving, autonomie, stabiliteit en beloning. Je krijgt 24 uitspraken. Geef bij elke uitspraak aan in hoeverre je het ermee eens bent dat dit voor jou belangrijk is in je werk. Sommige uitspraken gaan over een keuze tussen twee goede dingen: antwoord dan op basis van wat in de praktijk zwaarder zou wegen. Er zijn geen goede antwoorden, en je waarden kunnen veranderen per levensfase.',
+  scale: ['Helemaal oneens', 'Oneens', 'Neutraal', 'Eens', 'Helemaal eens'],
+  items: [
+    'Ik wil dat mijn werk op de een of andere manier anderen of de samenleving helpt.',
+    'Ik moet het gevoel hebben dat ik in mijn werk nieuwe dingen leer.',
+    'Ik bepaal graag zelf hoe ik mijn taken uitvoer.',
+    'Ik heb liever een zekere baan dan een interessantere baan die onzeker is.',
+    'Ik vind het belangrijk dat de mensen met wie ik werk mijn resultaten opmerken.',
+    'Ik wil werk dat tijd en energie overlaat voor mijn privéleven.',
+    'Ik werk graag in een team, waarin ik ideeën uitwissel met anderen.',
+    'Een goed salaris is een van de factoren die het zwaarst wegen als ik een baan kies.',
+    'Ik moet geloven in de missie van de organisatie waar ik werk.',
+    'Ik waardeer banen die uitdagingen bieden en kansen om nieuwe verantwoordelijkheden op me te nemen.',
+    'Ik werk beter als niemand elke stap die ik zet controleert.',
+    'Weten dat ik de komende jaren werk en inkomen heb, geeft me rust.',
+    'Een oprecht compliment van mijn leidinggevende motiveert me om het nog beter te doen.',
+    'Ik zou genoegen nemen met iets minder verdienen in ruil voor flexibele werktijden of meer vrije tijd.',
+    'Een goede band met collega\'s is voor mij net zo belangrijk als het werk zelf.',
+    'Ik zoek werk waarin ik meer kan verdienen naarmate ik betere resultaten lever.',
+    'Een goedbetaalde baan die voor mij geen betekenis heeft, zou niet genoeg zijn.',
+    'Ik zou een comfortabele baan opzeggen als die me geen kansen meer bood om me te ontwikkelen.',
+    'De vrijheid om mijn werktijden of werkplek te kiezen is belangrijk voor mij.',
+    'Ik houd van een voorspelbare routine en duidelijke regels op het werk.',
+    'Ik bekleed graag functies met aanzien en zichtbaarheid.',
+    'Ik vermijd banen waarbij ik buiten werktijd bereikbaar moet zijn.',
+    'Ik heb liever een omgeving waarin mensen elkaar helpen dan een waarin ieder voor zich werkt.',
+    'Ik zou van baan wisselen voor een flink hogere beloning, ook als ik mijn huidige baan leuk vind.',
+  ],
+  dims: {
+    purpose: {
+      label: 'Zingeving',
+      desc: 'Hoe sterk je het gevoel nodig hebt dat je werk betekenis heeft en bijdraagt aan iets groters.',
+      high: 'Voor jou is een goede baan niet genoeg: je moet geloven in wat je doet en de impact ervan zien op mensen of op de wereld. Dat geeft diepe motivatie en helpt je door moeilijke dagen heen. Het aandachtspunt is dat je slechte omstandigheden accepteert alleen omdat het doel belangrijk is.',
+      low: 'Je bekijkt werk meestal praktischer, als een middel om andere doelen in je leven te bereiken. Dat geeft je flexibiliteit bij het kiezen van kansen. Het aandachtspunt is dat je na verloop van tijd motivatie mist als niets in je werk betekenisvol aanvoelt.',
+      tips: [
+        'Vraag je af wie er baat heeft bij je werk, ook als dat indirect is.',
+        'Verdiep je voordat je een functie aanneemt in de missie en de werkwijze van de organisatie.',
+        'Geeft je huidige werk je die betekenis niet, zoek het dan in nevenprojecten of vrijwilligerswerk.',
+      ],
+      examples: ['Non-profitorganisaties', 'Zorg', 'Onderwijs', 'Bedrijven met sociale of ecologische impact'],
+    },
+    growth: {
+      label: 'Groei',
+      desc: 'Hoeveel waarde je hecht aan leren, je ontwikkelen en steeds grotere uitdagingen aangaan.',
+      high: 'Je moet het gevoel hebben dat je groeit, leert en verder komt in je loopbaan. Dat houdt je in ontwikkeling en vergroot je professionele mogelijkheden. Het aandachtspunt is voortdurende ontevredenheid: niet elke periode hoeft een promotie of een nieuwe uitdaging op te leveren.',
+      low: 'Je hecht meer aan de rust van goed doen wat je al beheerst dan aan het voortdurend zoeken naar nieuwe uitdagingen. Dat geeft consistentie en minder druk. Het aandachtspunt is dat je vaardigheden na verloop van tijd verouderd raken.',
+      tips: [
+        'Spreek met je leidinggevende een ontwikkeldoel af voor de komende maanden.',
+        'Maak elke maand een paar uur vrij om iets te leren dat nuttig is voor je vakgebied.',
+        'Vraag tijdens sollicitaties hoe promoties en opleidingen geregeld zijn.',
+      ],
+      examples: ['Groeiende bedrijven', 'Traineeprogramma\'s', 'Adviesbureaus', 'Bedrijven met een gestructureerd loopbaanpad'],
+    },
+    autonomy: {
+      label: 'Autonomie',
+      desc: 'Hoeveel waarde je hecht aan de vrijheid om te bepalen hoe, wanneer en waar je werkt.',
+      high: 'Je presteert beter als je de vrijheid hebt om je werk op je eigen manier in te richten. Dat bevordert initiatief en verantwoordelijkheid voor resultaten. Het aandachtspunt is dat je moeite hebt met sterk gecontroleerde omgevingen of met taken waarbij je strikte processen moet volgen.',
+      low: 'Je voelt je goed bij duidelijke richtlijnen en bij iemand die helpt prioriteiten te stellen. Dat maakt samenwerken en kwaliteitsnormen volgen makkelijker. Het aandachtspunt is dat je te afhankelijk wordt van sturing en kansen mist om initiatief te tonen.',
+      tips: [
+        'Maak met je leidinggevende heldere doelen in ruil voor meer vrijheid in hoe je ze bereikt.',
+        'Vraag in sollicitatiegesprekken hoe beslissingen in het dagelijks werk van het team worden genomen.',
+        'Als je meer vrijheid krijgt, maak dan je eigen routine en stel voor elke stap een deadline.',
+      ],
+      examples: ['Werken als zzp\'er', 'Ondernemerschap', 'Onderzoek', 'Teams op afstand met heldere doelen'],
+    },
+    stability: {
+      label: 'Stabiliteit',
+      desc: 'Hoeveel waarde je hecht aan zekerheid, voorspelbaarheid en continuïteit in werk en inkomen.',
+      high: 'Je voelt je beter als je weet wat je kunt verwachten: een gegarandeerd inkomen, duidelijke regels en een voorspelbare routine. Dat geeft rust om je privéleven te plannen. Het aandachtspunt is dat je interessante kansen laat lopen uit angst voor verandering.',
+      low: 'Je gaat goed om met onzekerheid en voelt je vrij om te veranderen als er iets interessants voorbijkomt. Dat maakt het makkelijker om nieuwe kansen te grijpen. Het aandachtspunt is dat je financiële risico\'s neemt zonder een buffer die je zekerheid geeft in moeilijke tijden.',
+      tips: [
+        'Houd een financiële buffer aan voor een paar maanden aan uitgaven: die geeft zekerheid in elk scenario.',
+        'Schat voordat je een verandering afwijst het werkelijke risico in en wat je ermee zou kunnen winnen.',
+        'Zoek stabiliteit ook in vaardigheden die op de arbeidsmarkt gewaardeerd worden, niet alleen in je huidige baan.',
+      ],
+      examples: ['Overheid', 'Grote, gevestigde bedrijven', 'Banken en verzekeraars', 'Essentiële diensten, zoals energie en waterbeheer'],
+    },
+    recognition: {
+      label: 'Erkenning',
+      desc: 'Hoe belangrijk je het vindt dat je inzet en je resultaten gezien en gewaardeerd worden.',
+      high: 'Je raakt gemotiveerd als je werk wordt opgemerkt en gewaardeerd door de mensen om je heen. Dat spoort je aan om resultaten van goede kwaliteit te leveren. Het aandachtspunt is dat je te afhankelijk wordt van de mening van anderen om te voelen dat je goed werk hebt geleverd.',
+      low: 'Je haalt voldoening uit goed gedaan werk, ook als niemand er iets over zegt. Dat geeft je onafhankelijkheid en motivatie uit jezelf. Het aandachtspunt is dat je prestaties onzichtbaar blijven en je kansen mist omdat je ze niet laat zien.',
+      tips: [
+        'Houd je prestaties het hele jaar bij, zodat je ze in beoordelingsgesprekken kunt laten zien.',
+        'Vraag direct om feedback als je die mist.',
+        'Erken ook het werk van collega\'s: zo ontstaat een cultuur van waardering.',
+      ],
+      examples: ['Verkoop met targets en bonussen', 'Communicatie en media', 'Advocatuur en advieswerk', 'Sport en kunst'],
+    },
+    balance: {
+      label: 'Balans',
+      desc: 'Hoeveel waarde je hecht aan tijd en energie voor je privéleven, je gezin, je gezondheid en rust.',
+      high: 'Voor jou moet werk in je leven passen, en niet andersom. Dat beschermt je gezondheid, je relaties en je energie op de lange termijn. Het aandachtspunt is dat je drukkere periodes afwijst die groei zouden kunnen brengen, ook als ze tijdelijk zouden zijn.',
+      low: 'Je bent bereid je intensief op je werk te storten als je denkt dat het de moeite waard is. Dat kan je loopbaan en je projecten versnellen. Het aandachtspunt is uitputting: zonder pauzes gaat vermoeidheid uiteindelijk ten koste van je gezondheid, je relaties en je prestaties zelf.',
+      tips: [
+        'Stel een tijdstip vast waarop je stopt met werken en laat de mensen met wie je werkt dat weten.',
+        'Vraag in sollicitatiegesprekken naar de werkelijke werktijden, overuren en het beleid voor thuiswerken.',
+        'Zet je persoonlijke afspraken net zo serieus in je agenda als je werkafspraken.',
+      ],
+      examples: ['Bedrijven met flexibele werktijden', 'Thuiswerken of hybride werken', 'Functies met duidelijke werktijden', 'Projectwerk of parttime werk'],
+    },
+    collaboration: {
+      label: 'Samenwerking',
+      desc: 'Hoeveel waarde je hecht aan werken in een team, goede relaties met collega\'s en een omgeving waarin mensen elkaar helpen.',
+      high: 'Je presteert beter als je ideeën uitwisselt en samenwerkt met anderen. Een goede sfeer in het team is voor jou net zo belangrijk als het werk zelf. Het aandachtspunt is dat je moeite hebt met eenzamer werk of met zeer competitieve omgevingen.',
+      low: 'Je voelt je goed als je zelfstandig werkt, met duidelijk afgebakende verantwoordelijkheden. Dat bevordert concentratie en autonomie. Het aandachtspunt is dat je je afzondert en bijdragen mist die alleen ontstaan in contact met anderen.',
+      tips: [
+        'Vraag tijdens sollicitaties of je het team kunt ontmoeten, of vraag hoe het team dagelijks werkt.',
+        'Werk je liever zelfstandig, spreek dan korte afstemmomenten met het team af.',
+        'Bied een collega hulp aan en vraag zelf om hulp als je die nodig hebt: allebei versterken ze het vertrouwen.',
+      ],
+      examples: ['Multidisciplinaire teams', 'Bedrijven met een plattere hiërarchie', 'Ziekenhuizen en zorgteams', 'Creatieve bureaus en studio\'s'],
+    },
+    pay: {
+      label: 'Beloning',
+      desc: 'Hoe zwaar salaris, secundaire arbeidsvoorwaarden en de mogelijkheid om meer te verdienen meewegen in je loopbaankeuzes.',
+      high: 'Goed betaald worden is voor jou een duidelijke prioriteit, of dat nu is voor zekerheid, vrijheid of om persoonlijke doelen te bereiken. Dat helpt je om stevig te onderhandelen en gewilde functies na te streven. Het aandachtspunt is dat je blijft in werk dat je uitput alleen vanwege het salaris.',
+      low: 'Je hecht meer waarde aan andere aspecten van werk dan aan het geld zelf. Dat geeft je de vrijheid om kansen te kiezen om wat ze aan interessants bieden. Het aandachtspunt is dat je een beloning accepteert die lager is dan wat je werk waard is, omdat je niet onderhandelt.',
+      tips: [
+        'Zoek de salarisrange van je functie op voordat je over een loonsverhoging of een aanbod onderhandelt.',
+        'Kijk naar het totale pakket: secundaire arbeidsvoorwaarden, bonussen, flexibiliteit en reiskosten.',
+        'Bepaal het minimumbedrag dat je nodig hebt om goed te leven en gebruik dat als richtpunt in onderhandelingen.',
+      ],
+      examples: ['Financiële sector', 'Verkoop op commissiebasis', 'Technologie', 'Managementfuncties'],
+    },
+  },
+  resultTitle: 'Wat voor jou het belangrijkst is in je werk',
+  resultIntro:
+    'We lichten de drie waarden met de hoogste scores uit. Als werk deze waarden respecteert, voel je je meestal gemotiveerder en tevredener. Als ze lange tijd opzij worden gezet, ontstaat vaak ontevredenheid, ook als de rest goed lijkt.',
+  note: 'Deze uitslag is een hulpmiddel voor zelfinzicht, gebaseerd op je eigen antwoorden. Het is geen gevalideerde psychologische test en vervangt geen loopbaanbegeleiding door een professional.',
+};
+
+export default t;

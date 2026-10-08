@@ -1,0 +1,140 @@
+// values — Polish translation of pt.ts
+import type { TestText } from '../../schema';
+
+const t: TestText = {
+  title: 'Wartości w pracy',
+  desc: 'Zrozum, co najbardziej się dla ciebie liczy przy wyborze pracy, ścieżki zawodowej albo projektu.',
+  intro:
+    'Ten kwestionariusz pomaga ustalić, co najbardziej cenisz w pracy, spośród ośmiu wartości, takich jak poczucie sensu, autonomia, stabilność i wynagrodzenie. Zawiera 24 stwierdzenia. Przy każdym zaznacz, na ile zgadzasz się, że dana rzecz jest dla ciebie ważna w pracy. Niektóre stwierdzenia dotyczą wyboru między dwiema dobrymi rzeczami: odpowiadaj, myśląc o tym, co w praktyce ważyłoby więcej. Nie ma dobrych odpowiedzi, a twoje wartości mogą się zmieniać na różnych etapach życia.',
+  scale: ['Zdecydowanie się nie zgadzam', 'Nie zgadzam się', 'Ani tak, ani nie', 'Zgadzam się', 'Zdecydowanie się zgadzam'],
+  items: [
+    'Chcę, żeby moja praca w jakiś sposób pomagała innym ludziom albo społeczeństwu.',
+    'Potrzebuję czuć, że w pracy uczę się nowych rzeczy.',
+    'Lubię samodzielnie decydować, jak wykonam swoje zadania.',
+    'Wolę pewną pracę od ciekawszej, ale niepewnej.',
+    'Ważne jest dla mnie, żeby osoby, z którymi pracuję, zauważały moje wyniki.',
+    'Chcę pracy, która zostawia czas i energię na życie prywatne.',
+    'Lubię pracować w zespole i wymieniać się pomysłami z innymi.',
+    'Dobre wynagrodzenie to jeden z czynników, które ważą najwięcej, kiedy wybieram pracę.',
+    'Muszę wierzyć w misję organizacji, w której pracuję.',
+    'Cenię stanowiska, które dają wyzwania i szanse na przejmowanie nowych obowiązków.',
+    'Pracuję lepiej, kiedy nikt nie kontroluje każdego mojego kroku.',
+    'Świadomość, że w najbliższych latach będę mieć pracę i dochód, daje mi spokój.',
+    'Szczera pochwała od przełożonych motywuje mnie, żeby pracować jeszcze lepiej.',
+    'Jestem w stanie zarabiać trochę mniej w zamian za elastyczne godziny pracy albo więcej wolnego czasu.',
+    'Dobre relacje ze współpracownikami są dla mnie równie ważne jak samo zadanie.',
+    'Szukam prac, w których mogę zarabiać więcej w zależności od osiąganych wyników.',
+    'Dobrze płatna praca, która nie ma dla mnie sensu, nie wystarczyłaby mi.',
+    'Jestem w stanie odejść z wygodnej pracy, jeśli nie daje mi już możliwości rozwoju.',
+    'Swoboda wyboru godzin albo miejsca pracy jest dla mnie ważna.',
+    'Lubię mieć w pracy przewidywalny rytm dnia i jasne zasady.',
+    'Lubię zajmować stanowiska, które dają prestiż i widoczność.',
+    'Unikam prac, które wymagają dyspozycyjności poza godzinami pracy.',
+    'Wolę środowisko, w którym ludzie sobie pomagają, od takiego, w którym każdy pracuje na własny rachunek.',
+    'Dla dużo wyższego wynagrodzenia jestem w stanie zmienić pracę, nawet jeśli lubię obecną.',
+  ],
+  dims: {
+    purpose: {
+      label: 'Poczucie sensu',
+      desc: 'Na ile potrzebujesz czuć, że twoja praca ma sens i przyczynia się do czegoś większego.',
+      high: 'Dobra posada to dla ciebie za mało: musisz wierzyć w to, co robisz, i widzieć, jaki ma to wpływ na ludzi albo na świat. To daje głęboką motywację i pomaga przetrwać trudne dni. Warto uważać, żeby nie godzić się na złe warunki tylko dlatego, że sprawa jest ważna.',
+      low: 'Zwykle patrzysz na pracę bardziej praktycznie, jako na środek do osiągnięcia innych celów w życiu. To daje elastyczność w wyborze możliwości. Warto uważać, bo z czasem może zabraknąć ci motywacji, jeśli nic w pracy nie będzie się wydawać znaczące.',
+      tips: [
+        'Zapytaj siebie, kto korzysta na twojej pracy, nawet pośrednio.',
+        'Zanim przyjmiesz ofertę, sprawdź misję i praktyki organizacji.',
+        'Jeśli obecna praca nie daje ci tego poczucia sensu, szukaj go w projektach pobocznych albo w wolontariacie.',
+      ],
+      examples: ['Organizacje non-profit', 'Ochrona zdrowia', 'Edukacja', 'Firmy o pozytywnym wpływie społecznym lub środowiskowym'],
+    },
+    growth: {
+      label: 'Rozwój',
+      desc: 'Na ile cenisz naukę, rozwój i podejmowanie coraz większych wyzwań.',
+      high: 'Potrzebujesz czuć, że się rozwijasz, uczysz i idziesz naprzód w karierze. To pozwala ci stale się doskonalić i poszerza twoje możliwości zawodowe. Warto uważać na ciągłe niezadowolenie: nie każdy etap musi przynosić awans albo nowe wyzwanie.',
+      low: 'Bardziej cenisz spokój wynikający z dobrego wykonywania tego, co już dobrze znasz, niż ciągłe szukanie nowych wyzwań. To daje stabilność i mniejszą presję. Warto uważać, żeby twoje umiejętności z czasem się nie zdezaktualizowały.',
+      tips: [
+        'Ustal z przełożonym cel rozwojowy na najbliższe miesiące.',
+        'Zarezerwuj kilka godzin w miesiącu na naukę czegoś przydatnego w twojej dziedzinie.',
+        'Podczas rekrutacji pytaj, jak wyglądają awanse i szkolenia.',
+      ],
+      examples: ['Rozwijające się firmy', 'Programy dla absolwentów', 'Firmy doradcze', 'Firmy z jasno określoną ścieżką kariery'],
+    },
+    autonomy: {
+      label: 'Autonomia',
+      desc: 'Na ile cenisz swobodę decydowania o tym, jak, kiedy i gdzie pracujesz.',
+      high: 'Osiągasz najwięcej, kiedy możesz organizować pracę po swojemu. To sprzyja inicjatywie i braniu odpowiedzialności za wyniki. Warto uważać, bo możesz mieć trudności w mocno kontrolowanym środowisku albo przy zadaniach wymagających trzymania się sztywnych procedur.',
+      low: 'Dobrze czujesz się z jasnymi wytycznymi i z kimś, kto pomaga ustalać priorytety. To ułatwia pracę zespołową i trzymanie się standardów jakości. Warto uważać, żeby nie polegać zbytnio na wskazówkach innych i nie tracić okazji do wykazania się inicjatywą.',
+      tips: [
+        'Wynegocjuj z przełożonym jasne cele w zamian za większą swobodę w sposobie ich osiągania.',
+        'Na rozmowach kwalifikacyjnych pytaj, jak na co dzień podejmuje się decyzje w zespole.',
+        'Kiedy masz więcej swobody, stwórz własny plan dnia i wyznacz termin dla każdego etapu.',
+      ],
+      examples: ['Praca na własny rachunek', 'Przedsiębiorczość', 'Praca badawcza', 'Zespoły zdalne z jasnymi celami'],
+    },
+    stability: {
+      label: 'Stabilność',
+      desc: 'Na ile cenisz bezpieczeństwo, przewidywalność i ciągłość pracy oraz dochodu.',
+      high: 'Lepiej się czujesz, kiedy wiesz, czego się spodziewać: pewnego dochodu, jasnych zasad i przewidywalnego rytmu dnia. To daje spokój przy planowaniu życia prywatnego. Warto uważać, żeby nie przepuszczać ciekawych okazji z obawy przed zmianami.',
+      low: 'Dobrze radzisz sobie z niepewnością i swobodnie decydujesz się na zmianę, kiedy pojawia się coś ciekawego. To ułatwia korzystanie z nowych okazji. Warto uważać, żeby nie podejmować ryzyka finansowego bez oszczędności, które dadzą bezpieczeństwo w trudnych chwilach.',
+      tips: [
+        'Miej oszczędności na kilka miesięcy wydatków: dają bezpieczeństwo w każdej sytuacji.',
+        'Zanim odrzucisz zmianę, oceń realne ryzyko i to, co możesz dzięki niej zyskać.',
+        'Szukaj stabilności także w umiejętnościach cenionych na rynku, a nie tylko w obecnej pracy.',
+      ],
+      examples: ['Administracja publiczna', 'Duże, ugruntowane firmy', 'Banki i ubezpieczyciele', 'Usługi kluczowe, takie jak energetyka albo wodociągi i kanalizacja'],
+    },
+    recognition: {
+      label: 'Uznanie',
+      desc: 'Na ile ważne jest dla ciebie, żeby twój wysiłek i twoje wyniki były zauważane i doceniane.',
+      high: 'Motywuje cię, kiedy osoby wokół ciebie zauważają i doceniają twoją pracę. To pcha cię do osiągania wyników dobrej jakości. Warto uważać, żeby nie uzależniać od opinii innych poczucia, że dobrze wykonujesz swoją pracę.',
+      low: 'Satysfakcję daje ci dobrze wykonana praca, nawet gdy nikt jej nie komentuje. To daje niezależność i wewnętrzną motywację. Warto uważać, żeby twoje osiągnięcia nie pozostawały niewidoczne i żeby nie tracić okazji tylko dlatego, że ich nie pokazujesz.',
+      tips: [
+        'Przez cały rok zapisuj swoje osiągnięcia, żeby przedstawić je podczas rozmów oceniających.',
+        'Kiedy brakuje ci informacji zwrotnej, poproś o nią wprost.',
+        'Doceniaj też pracę innych: to buduje kulturę uznania.',
+      ],
+      examples: ['Sprzedaż z celami i nagrodami', 'Komunikacja i media', 'Prawo i doradztwo', 'Sport i sztuka'],
+    },
+    balance: {
+      label: 'Równowaga',
+      desc: 'Na ile cenisz czas i energię na życie prywatne, rodzinę, zdrowie i odpoczynek.',
+      high: 'Dla ciebie praca musi mieścić się w życiu, a nie odwrotnie. To chroni twoje zdrowie, relacje i energię na dłuższą metę. Warto uważać, żeby nie odrzucać intensywniejszych okresów, które mogłyby przynieść rozwój, nawet jeśli byłyby tylko tymczasowe.',
+      low: 'Jesteś w stanie intensywnie poświęcić się pracy, kiedy uważasz, że warto. To może przyspieszyć twoją karierę i twoje projekty. Warto uważać na wyczerpanie: bez przerw zmęczenie w końcu odbija się na zdrowiu, relacjach i samej wydajności.',
+      tips: [
+        'Ustal godzinę kończenia pracy i poinformuj o niej osoby, z którymi pracujesz.',
+        'Na rozmowach kwalifikacyjnych pytaj o rzeczywisty czas pracy, nadgodziny i zasady pracy zdalnej.',
+        'Wpisuj do kalendarza sprawy prywatne z taką samą powagą jak zawodowe.',
+      ],
+      examples: ['Firmy z elastycznym czasem pracy', 'Praca zdalna albo hybrydowa', 'Stanowiska z jasno określonymi godzinami', 'Praca projektowa albo w niepełnym wymiarze godzin'],
+    },
+    collaboration: {
+      label: 'Współpraca',
+      desc: 'Na ile cenisz pracę zespołową, dobre relacje ze współpracownikami i atmosferę wzajemnej pomocy.',
+      high: 'Osiągasz najwięcej, kiedy wymieniasz się pomysłami i pracujesz razem z innymi. Dobra atmosfera w zespole jest dla ciebie równie ważna jak samo zadanie. Warto uważać, bo możesz mieć trudności przy pracy w pojedynkę albo w bardzo konkurencyjnym środowisku.',
+      low: 'Dobrze czujesz się, pracując niezależnie, z jasno określonymi obowiązkami. To sprzyja koncentracji i samodzielności. Warto uważać, żeby się nie izolować i nie tracić pomysłów, które rodzą się dopiero w wymianie z innymi.',
+      tips: [
+        'Podczas rekrutacji poproś o możliwość poznania zespołu albo zapytaj, jak pracuje na co dzień.',
+        'Jeśli wolisz pracować niezależnie, umów się z zespołem na krótkie spotkania, żeby uzgadniać działania.',
+        'Proponuj pomoc współpracownikom i proś o nią, kiedy jej potrzebujesz: jedno i drugie wzmacnia zaufanie.',
+      ],
+      examples: ['Zespoły interdyscyplinarne', 'Firmy o płaskiej strukturze', 'Szpitale i zespoły medyczne', 'Agencje i studia kreatywne'],
+    },
+    pay: {
+      label: 'Wynagrodzenie',
+      desc: 'Na ile pensja, benefity i możliwość zarabiania więcej wpływają na twoje wybory zawodowe.',
+      high: 'Dobre zarobki to dla ciebie wyraźny priorytet, czy to dla bezpieczeństwa, wolności, czy realizacji osobistych celów. To pomaga stanowczo negocjować i szukać dobrze opłacanych stanowisk. Warto uważać, żeby nie zostawać w wyczerpującej pracy tylko z powodu pensji.',
+      low: 'Bardziej niż same pieniądze cenisz inne aspekty pracy. To daje swobodę wybierania możliwości ze względu na to, co oferują ciekawego. Warto uważać, żeby z braku negocjacji nie godzić się na wynagrodzenie niższe, niż jest warta twoja praca.',
+      tips: [
+        'Przed negocjowaniem podwyżki albo oferty sprawdź widełki płacowe na swoim stanowisku.',
+        'Bierz pod uwagę cały pakiet: benefity, premie, elastyczność i koszty dojazdu.',
+        'Określ minimalną kwotę, której potrzebujesz, żeby dobrze żyć, i traktuj ją jako punkt odniesienia w negocjacjach.',
+      ],
+      examples: ['Sektor finansowy', 'Sprzedaż z prowizją', 'Technologia', 'Stanowiska kierownicze'],
+    },
+  },
+  resultTitle: 'Co jest dla ciebie najważniejsze w pracy',
+  resultIntro:
+    'Wyróżniamy trzy wartości z najwyższymi wynikami. Kiedy praca szanuje te wartości, zwykle czujesz więcej motywacji i satysfakcji. Kiedy przez dłuższy czas schodzą na dalszy plan, zwykle pojawia się niezadowolenie, nawet jeśli wszystko inne wygląda dobrze.',
+  note: 'Ten wynik to narzędzie do lepszego poznania siebie, oparte na twoich własnych odpowiedziach. Nie jest zweryfikowanym testem psychologicznym i nie zastąpi doradztwa zawodowego prowadzonego przez specjalistę.',
+};
+
+export default t;

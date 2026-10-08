@@ -1,0 +1,140 @@
+// values — Turkish translation of pt.ts
+import type { TestText } from '../../schema';
+
+const t: TestText = {
+  title: 'İşteki değerler',
+  desc: 'Bir iş, kariyer ya da proje seçerken senin için en çok neyin önemli olduğunu anla.',
+  intro:
+    'Bu anket, amaç, özerklik, istikrar ve kazanç gibi sekiz değer arasından işte en çok neye değer verdiğini belirlemene yardımcı olur. 24 ifade var. Her biri için, o şeyin iş hayatında senin için önemli olduğuna ne kadar katıldığını işaretle. Bazı ifadeler iki iyi şey arasında bir seçim içerir: Pratikte hangisinin daha ağır basacağını düşünerek cevap ver. Doğru cevap yoktur ve değerlerin hayatın dönemine göre değişebilir.',
+  scale: ['Kesinlikle katılmıyorum', 'Katılmıyorum', 'Kararsızım', 'Katılıyorum', 'Kesinlikle katılıyorum'],
+  items: [
+    'İşimin bir şekilde başkalarına ya da topluma yardımcı olmasını isterim.',
+    'İşte yeni şeyler öğrendiğimi hissetmeye ihtiyacım var.',
+    'Görevlerimi nasıl yerine getireceğime kendi başıma karar vermeyi severim.',
+    'Daha ilginç ama belirsiz bir işe kıyasla güvenceli bir işi tercih ederim.',
+    'Sonuçlarımın birlikte çalıştığım insanlar tarafından fark edilmesi benim için önemlidir.',
+    'Özel hayatıma zaman ve enerji bırakan bir iş isterim.',
+    'Başkalarıyla fikir alışverişi yaparak ekip hâlinde çalışmayı severim.',
+    'İş seçerken en çok ağır basan etkenlerden biri iyi bir maaştır.',
+    'Çalıştığım kurumun misyonuna inanmaya ihtiyacım var.',
+    'Zorluklar ve yeni sorumluluklar üstlenme fırsatları sunan işlere değer veririm.',
+    'Attığım her adımı kimse kontrol etmediğinde daha iyi çalışırım.',
+    'Önümüzdeki yıllarda bir işimin ve gelirimin olacağını bilmek bana huzur verir.',
+    'Yöneticimden gelen içten bir övgü, daha da iyisini yapmam için beni motive eder.',
+    'Esnek çalışma saatleri ya da daha fazla boş zaman için biraz daha az kazanmayı kabul ederdim.',
+    'İş arkadaşlarımla iyi bir ilişki, benim için işin kendisi kadar önemlidir.',
+    'Ortaya koyduğum sonuçlara göre daha fazla kazanabileceğim işler ararım.',
+    'İyi para kazandıran ama bana anlamlı gelmeyen bir iş yeterli olmazdı.',
+    'Gelişmem için daha fazla fırsat sunmuyorsa rahat bir işten ayrılırdım.',
+    'Çalışma saatlerimi ya da çalışma yerimi seçme özgürlüğüne sahip olmak benim için önemlidir.',
+    'İşte öngörülebilir bir rutinim ve açık kurallarım olmasını severim.',
+    'Prestijli ve görünür pozisyonlarda bulunmayı severim.',
+    'Mesai saatleri dışında ulaşılabilir olmayı gerektiren işlerden kaçınırım.',
+    'Herkesin kendi başına çalıştığı ortamlar yerine insanların birbirine yardım ettiği ortamları tercih ederim.',
+    'Şu anki işimi sevsem bile, çok daha yüksek bir kazanç için iş değiştirirdim.',
+  ],
+  dims: {
+    purpose: {
+      label: 'Amaç',
+      desc: 'İşinin bir anlamı olduğunu ve daha büyük bir şeye katkıda bulunduğunu hissetmeye ne kadar ihtiyaç duyduğun.',
+      high: 'Senin için iyi bir iş yeterli değildir: Yaptığın şeye inanman ve bunun insanlar ya da dünya üzerindeki etkisini görmen gerekir. Bu sana derin bir motivasyon verir ve zor günleri atlatmana yardımcı olur. Dikkat etmen gereken nokta, sırf amaç önemli diye kötü koşulları kabul etmektir.',
+      low: 'İşe daha pratik bakma, onu hayatındaki başka hedeflere ulaşmanın bir aracı olarak görme eğilimindesin. Bu, fırsatları seçerken sana esneklik kazandırır. Dikkat etmen gereken nokta, işte hiçbir şey anlamlı gelmezse zamanla motivasyon eksikliği hissetmektir.',
+      tips: [
+        'Dolaylı yoldan da olsa işinden kimin fayda sağladığını kendine sor.',
+        'Bir iş teklifini kabul etmeden önce, kurumun misyonunu ve uygulamalarını araştır.',
+        'Şu anki işin bu anlamı sağlamıyorsa, onu yan projelerde ya da gönüllü çalışmalarda ara.',
+      ],
+      examples: ['Kâr amacı gütmeyen kuruluşlar', 'Sağlık', 'Eğitim', 'Sosyal ya da çevresel etki odaklı şirketler'],
+    },
+    growth: {
+      label: 'Gelişim',
+      desc: 'Öğrenmeye, kendini geliştirmeye ve giderek daha büyük zorluklar üstlenmeye ne kadar değer verdiğin.',
+      high: 'Geliştiğini, öğrendiğini ve kariyerinde ilerlediğini hissetmeye ihtiyaç duyarsın. Bu, seni gelişmeye devam ettirir ve mesleki seçeneklerini genişletir. Dikkat etmen gereken nokta sürekli tatminsizliktir: Her dönemin bir terfi ya da yeni bir zorluk getirmesi gerekmez.',
+      low: 'Sürekli yeni zorluklar aramaktansa zaten hâkim olduğun şeyi iyi yapmanın rahatlığına daha çok değer verirsin. Bu sana tutarlılık ve daha az baskı getirir. Dikkat etmen gereken nokta, becerilerinin zamanla güncelliğini yitirmesine izin vermektir.',
+      tips: [
+        'Önümüzdeki aylar için yöneticinle bir gelişim hedefi belirle.',
+        'Her ay alanında işine yarayacak bir şey öğrenmek için birkaç saat ayır.',
+        'İşe alım süreçlerinde terfilerin ve eğitimlerin nasıl işlediğini sor.',
+      ],
+      examples: ['Büyüyen şirketler', 'Yönetici adayı programları', 'Danışmanlık firmaları', 'Yapılandırılmış kariyer planı olan şirketler'],
+    },
+    autonomy: {
+      label: 'Özerklik',
+      desc: 'Nasıl, ne zaman ve nerede çalışacağına karar verme özgürlüğüne ne kadar değer verdiğin.',
+      high: 'İşini kendi bildiğin gibi düzenleme özgürlüğün olduğunda daha verimli olursun. Bu, inisiyatif almayı ve sonuçların sorumluluğunu üstlenmeyi destekler. Dikkat etmen gereken nokta, çok kontrollü ortamlarda ya da katı süreçlere uymayı gerektiren işlerde zorlanmaktır.',
+      low: 'Açık yönlendirmelerle ve önceliklerin belirlenmesine yardım eden biriyle kendini iyi hissedersin. Bu, ekip hâlinde çalışmayı ve kalite standartlarına uymayı kolaylaştırır. Dikkat etmen gereken nokta, yönlendirmeye fazla bağımlı olmak ve inisiyatif gösterme fırsatlarını kaçırmaktır.',
+      tips: [
+        'Hedeflere nasıl ulaşacağın konusunda daha fazla özgürlük karşılığında yöneticinle açık hedefler üzerinde anlaş.',
+        'İş görüşmelerinde, ekibin günlük işleyişinde kararların nasıl alındığını sor.',
+        'Daha fazla özgürlüğün olduğunda, kendi rutinini oluştur ve her aşama için bir süre belirle.',
+      ],
+      examples: ['Serbest çalışma', 'Girişimcilik', 'Araştırma', 'Hedefleri net olan uzaktan çalışan ekipler'],
+    },
+    stability: {
+      label: 'İstikrar',
+      desc: 'İşte ve gelirde güvenceye, öngörülebilirliğe ve sürekliliğe ne kadar değer verdiğin.',
+      high: 'Ne bekleyeceğini bildiğinde kendini daha iyi hissedersin: garantili bir gelir, açık kurallar ve öngörülebilir bir rutin. Bu, özel hayatını planlamak için sana huzur verir. Dikkat etmen gereken nokta, değişiklik korkusuyla ilginç fırsatları kaçırmaktır.',
+      low: 'Belirsizliklerle iyi başa çıkarsın ve ilginç bir şey çıktığında değişiklik yapmakta rahat hissedersin. Bu, yeni fırsatları değerlendirmeyi kolaylaştırır. Dikkat etmen gereken nokta, zor zamanlarda güvence sağlayacak bir birikim olmadan mali riskler almaktır.',
+      tips: [
+        'Birkaç aylık giderini karşılayacak bir birikim tut: Bu, her durumda güvence sağlar.',
+        'Bir değişikliği reddetmeden önce, gerçek riski ve ondan neler kazanabileceğini değerlendir.',
+        'İstikrarı yalnızca şu anki işinde değil, iş piyasasında değer gören becerilerde de ara.',
+      ],
+      examples: ['Kamu sektörü', 'Köklü büyük şirketler', 'Bankalar ve sigorta şirketleri', 'Enerji ve su gibi temel hizmetler'],
+    },
+    recognition: {
+      label: 'Takdir',
+      desc: 'Çabanın ve sonuçlarının görülmesinin ve takdir edilmesinin senin için ne kadar önemli olduğu.',
+      high: 'İşin etrafındaki insanlar tarafından fark edildiğinde ve takdir edildiğinde motive olursun. Bu, seni kaliteli sonuçlar elde etmeye yöneltir. Dikkat etmen gereken nokta, iyi bir iş çıkardığını hissetmek için başkalarının fikrine fazla bağımlı olmaktır.',
+      low: 'Kimse bir şey söylemese bile iyi yapılmış bir işten tatmin olursun. Bu sana bağımsızlık ve içsel motivasyon kazandırır. Dikkat etmen gereken nokta, başarılarını görünmez bırakmak ve onları göstermediğin için fırsatları kaçırmaktır.',
+      tips: [
+        'Başarılarını değerlendirme görüşmelerinde sunabilmek için yıl boyunca kaydını tut.',
+        'Geri bildirim eksikliği hissettiğinde bunu doğrudan iste.',
+        'İş arkadaşlarının emeğini de takdir et: Bu, değer veren bir kültür oluşturur.',
+      ],
+      examples: ['Hedefli ve ödüllü satış', 'İletişim ve medya', 'Hukuk ve danışmanlık', 'Spor ve sanat'],
+    },
+    balance: {
+      label: 'Denge',
+      desc: 'Özel hayatın, ailen, sağlığın ve dinlenmen için zamanın ve enerjin olmasına ne kadar değer verdiğin.',
+      high: 'Senin için iş hayata sığmalıdır, tersi değil. Bu, uzun vadede sağlığını, ilişkilerini ve enerjini korur. Dikkat etmen gereken nokta, geçici olsalar bile seni geliştirebilecek daha yoğun dönemleri reddetmektir.',
+      low: 'Buna değdiğine inandığında kendini işe yoğun bir şekilde vermeyi kabul edersin. Bu, kariyerini ve projelerini hızlandırabilir. Dikkat etmen gereken nokta yıpranmadır: Mola vermeden çalışınca yorgunluk sonunda sağlığını, ilişkilerini ve performansını etkiler.',
+      tips: [
+        'İşi bitirmek için bir saat belirle ve bunu birlikte çalıştığın insanlara bildir.',
+        'İş görüşmelerinde gerçek çalışma saatlerini, fazla mesaiyi ve uzaktan çalışma politikasını sor.',
+        'Kişisel planlarını ajandana iş randevularınla aynı ciddiyetle yaz.',
+      ],
+      examples: ['Esnek çalışma saatleri olan şirketler', 'Uzaktan ya da hibrit çalışma', 'Çalışma saatleri net olan görevler', 'Proje bazlı ya da yarı zamanlı çalışma'],
+    },
+    collaboration: {
+      label: 'İş birliği',
+      desc: 'Ekip hâlinde çalışmaya, iş arkadaşlarınla iyi ilişkilere ve karşılıklı yardımlaşmanın olduğu bir ortama ne kadar değer verdiğin.',
+      high: 'Fikir alışverişi yaptığında ve başkalarıyla birlikte çalıştığında daha verimli olursun. İyi bir ekip havası, senin için işin kendisi kadar önemlidir. Dikkat etmen gereken nokta, daha yalnız yapılan işlerde ya da çok rekabetçi ortamlarda zorlanmaktır.',
+      low: 'Sorumlulukları net bir şekilde belirlenmiş olarak bağımsız çalışmaktan hoşlanırsın. Bu, konsantrasyonu ve özerkliği destekler. Dikkat etmen gereken nokta, kendini yalıtmak ve ancak başkalarıyla fikir alışverişinde ortaya çıkan katkıları kaçırmaktır.',
+      tips: [
+        'İşe alım süreçlerinde ekiple tanışmak iste ya da ekibin günlük olarak nasıl çalıştığını sor.',
+        'Bağımsız çalışmayı tercih ediyorsan, ekiple kısa görüş birliği toplantıları planla.',
+        'Bir iş arkadaşına yardım teklif et ve ihtiyacın olduğunda yardım iste: İkisi de güveni güçlendirir.',
+      ],
+      examples: ['Çok disiplinli ekipler', 'Daha yatay hiyerarşiye sahip şirketler', 'Hastaneler ve sağlık ekipleri', 'Ajanslar ve yaratıcı stüdyolar'],
+    },
+    pay: {
+      label: 'Kazanç',
+      desc: 'Maaşın, yan hakların ve daha fazla kazanma olasılığının mesleki seçimlerinde ne kadar ağır bastığı.',
+      high: 'Senin için, ister güvence ister özgürlük için ister kişisel hedeflerine ulaşmak için olsun, iyi para kazanmak açık bir önceliktir. Bu, kararlı bir şekilde pazarlık yapmana ve değer gören görevlere yönelmene yardımcı olur. Dikkat etmen gereken nokta, seni yıpratan işlerde sırf maaş yüzünden kalmaktır.',
+      low: 'İşin diğer yönlerine paranın kendisinden daha çok değer verirsin. Bu, fırsatları sundukları ilginç yanlara göre seçme özgürlüğü verir. Dikkat etmen gereken nokta, pazarlık yapmadığın için emeğinin değerinin altında bir ücreti kabul etmektir.',
+      tips: [
+        'Bir zam ya da teklif için pazarlık yapmadan önce görevinin maaş aralığını araştır.',
+        'Paketin bütününü göz önünde bulundur: yan haklar, primler, esneklik ve ulaşım masrafları.',
+        'İyi yaşamak için ihtiyaç duyduğun en düşük tutarı belirle ve pazarlıklarda bunu referans olarak kullan.',
+      ],
+      examples: ['Finans sektörü', 'Komisyonlu satış', 'Teknoloji', 'Yönetim pozisyonları'],
+    },
+  },
+  resultTitle: 'İşte senin için en önemli olanlar',
+  resultIntro:
+    'En yüksek puanı alan üç değerini öne çıkardık. Bir iş bu değerlere saygı gösterdiğinde, genellikle daha fazla motivasyon ve tatmin hissedersin. Bu değerler uzun süre göz ardı edildiğinde ise, geri kalan her şey iyi görünse bile genellikle tatminsizlik ortaya çıkar.',
+  note: 'Bu sonuç, kendi cevaplarına dayanan bir kendini tanıma aracıdır. Geçerliliği kanıtlanmış bir psikolojik test değildir ve bir uzmanın yaptığı kariyer danışmanlığının yerini tutmaz.',
+};
+
+export default t;

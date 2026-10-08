@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist Variable", "Geist", "Noto Sans JP", "Noto Sans KR", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Geist Mono Variable", "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* Neutros */
+  --color-ink: #0e1116;
+  --color-ink-2: #3f4654;
+  --color-muted: #7c8394;
+  --color-line: #e8eaef;
+  --color-soft: #f5f6f8;
+  --color-soft-2: #eceef2;
+
+  /* Um único destaque: dados, seleção e progresso */
+  --color-brand: #2d5bff;
+  --color-brand-600: #1f47e0;
+  --color-brand-50: #eef2ff;
+
+  /* Estados */
+  --color-good: #12a150;
+  --color-good-50: #e9f7ef;
+  --color-bad: #e5484d;
+  --color-bad-50: #fdeeee;
+  --color-warn: #b4561e;
+  --color-warn-50: #fdf1e8;
+
+  /* Botão de ação principal (começar o teste): verde com contraste AA para texto branco */
+  --color-cta: #0b8a42;
+  --color-cta-600: #097a3a;
+
+  --animate-in: screen-in 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-fade: fade-in 0.2s ease both;
+
+  @keyframes screen-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes fade-in {
+    from { opacity: 0; }
+  }
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body { @apply bg-white font-sans text-[16px] leading-[1.6] text-ink antialiased; }
+  h1, h2, h3, h4 { @apply font-semibold leading-[1.08] tracking-[-0.03em] text-balance; }
+  p { @apply text-pretty; }
+  button { cursor: pointer; }
+  ::selection { background: var(--color-brand-50); color: var(--color-ink); }
+  :focus-visible { outline: 2px solid var(--color-brand); outline-offset: 2px; border-radius: 6px; }
+}
+
+/* Japonês e coreano: sem tracking negativo e quebra de linha por palavra */
+html:lang(ja) :is(h1, h2, h3), html:lang(ko) :is(h1, h2, h3) { letter-spacing: -0.01em; line-height: 1.2; }
+html:lang(ko) { word-break: keep-all; }
+html:lang(ja) { line-break: strict; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+/* Fundo "aurora": tons pastel (verde-água e azul) que se movem bem devagar atrás de cartões
+   brancos. Só anima transform (barato no celular); com "reduzir movimento" fica parado. */
+.aurora { position: relative; isolation: isolate; overflow: hidden; background: #f2f7fb; }
+.aurora::before, .aurora::after { content: ""; position: absolute; z-index: -1; pointer-events: none; will-change: transform; }
+.aurora::before {
+  width: 90%; height: 95%; top: -38%; right: -28%;
+  background: radial-gradient(closest-side, rgba(176, 228, 210, 0.75), rgba(176, 228, 210, 0));
+  animation: aurora-a 17s ease-in-out infinite alternate;
+}
+.aurora::after {
+  width: 95%; height: 100%; bottom: -42%; left: -30%;
+  background: radial-gradient(closest-side, rgba(180, 206, 250, 0.8), rgba(180, 206, 250, 0));
+  animation: aurora-b 21s ease-in-out infinite alternate;
+}
+@keyframes aurora-a { to { transform: translate(-14%, 16%) scale(1.1); } }
+@keyframes aurora-b { to { transform: translate(16%, -12%) scale(1.08); } }
+
+/* Cartão branco "flutuando" sobre a aurora */
+.float-card {
+  background: #fff; border-radius: 20px; border: 1px solid rgba(14, 17, 22, 0.05);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 16px 36px -18px rgba(30, 55, 100, 0.28);
+}
+/* Balanço suave (só nas ilustrações; nunca em nada que a pessoa precise tocar) */
+.float-slow { animation: float-slow 7s ease-in-out infinite; }
+@keyframes float-slow { 50% { transform: translateY(-5px); } }

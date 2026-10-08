@@ -1,0 +1,140 @@
+import type { TestText } from '../../schema';
+
+// values — Spanish translation of pt.ts
+const t: TestText = {
+  title: 'Valores en el trabajo',
+  desc: 'Entiende qué es lo que más pesa para ti a la hora de elegir un empleo, una carrera o un proyecto.',
+  intro:
+    'Este cuestionario te ayuda a identificar lo que más valoras en el trabajo, entre ocho valores como el propósito, la autonomía, la estabilidad y la remuneración. Son 24 frases. Para cada una, indica cuánto estás de acuerdo en que eso es importante para ti en el trabajo. Algunas frases implican elegir entre dos cosas buenas: responde pensando en lo que pesaría más en la práctica. No hay respuestas correctas, y tus valores pueden cambiar según la etapa de la vida.',
+  scale: ['Totalmente en desacuerdo', 'En desacuerdo', 'Neutral', 'De acuerdo', 'Totalmente de acuerdo'],
+  items: [
+    'Quiero que mi trabajo ayude de alguna manera a otras personas o a la sociedad.',
+    'Necesito sentir que estoy aprendiendo cosas nuevas en el trabajo.',
+    'Me gusta decidir por mi cuenta cómo voy a realizar mis tareas.',
+    'Prefiero un empleo seguro a uno más interesante pero incierto.',
+    'Es importante para mí que las personas con quienes trabajo noten mis resultados.',
+    'Quiero un trabajo que me deje tiempo y energía para mi vida personal.',
+    'Me gusta trabajar en equipo, intercambiando ideas con otras personas.',
+    'Un buen salario es uno de los factores que más pesan cuando elijo un empleo.',
+    'Necesito creer en la misión de la organización en la que trabajo.',
+    'Valoro los empleos que ofrecen desafíos y oportunidades de asumir nuevas responsabilidades.',
+    'Trabajo mejor cuando nadie controla cada paso que doy.',
+    'Saber que tendré trabajo e ingresos en los próximos años me da tranquilidad.',
+    'Un elogio sincero de mis superiores me motiva a hacerlo todavía mejor.',
+    'Aceptaría ganar un poco menos a cambio de tener horarios flexibles o más tiempo libre.',
+    'Una buena relación con mis colegas es tan importante para mí como la tarea en sí.',
+    'Busco trabajos en los que pueda ganar más según los resultados que entrego.',
+    'Un trabajo bien pagado, pero sin sentido para mí, no me bastaría.',
+    'Dejaría un empleo cómodo si no me ofreciera más oportunidades de crecer.',
+    'Tener libertad para elegir mis horarios o mi lugar de trabajo es importante para mí.',
+    'Me gusta tener una rutina previsible y reglas claras en el trabajo.',
+    'Me gusta ocupar puestos con prestigio y visibilidad.',
+    'Evito los empleos que exigen estar disponible fuera del horario laboral.',
+    'Prefiero los ambientes en los que las personas se ayudan a aquellos en los que cada uno trabaja por su cuenta.',
+    'Cambiaría de empleo por una remuneración mucho mayor, aunque me guste el actual.',
+  ],
+  dims: {
+    purpose: {
+      label: 'Propósito',
+      desc: 'Cuánto necesitas sentir que tu trabajo tiene sentido y contribuye a algo más grande.',
+      high: 'Para ti, no basta con un buen empleo: necesitas creer en lo que haces y ver su impacto en las personas o en el mundo. Esto te da una motivación profunda y te ayuda a atravesar los días difíciles. Lo que conviene vigilar es aceptar malas condiciones solo porque la causa es importante.',
+      low: 'Tiendes a ver el trabajo de forma más práctica, como un medio para alcanzar otros objetivos de tu vida. Esto te da flexibilidad para elegir oportunidades. Lo que conviene vigilar es que con el tiempo te falte motivación si nada en el trabajo te parece significativo.',
+      tips: [
+        'Pregúntate quién se beneficia de tu trabajo, aunque sea de forma indirecta.',
+        'Antes de aceptar un puesto, investiga la misión y las prácticas de la organización.',
+        'Si tu trabajo actual no te da ese sentido, búscalo en proyectos paralelos o en el voluntariado.',
+      ],
+      examples: ['Organizaciones sin fines de lucro', 'Salud', 'Educación', 'Empresas de impacto social o ambiental'],
+    },
+    growth: {
+      label: 'Crecimiento',
+      desc: 'Cuánto valoras aprender, desarrollarte y asumir desafíos cada vez mayores.',
+      high: 'Necesitas sentir que estás evolucionando, aprendiendo y avanzando en tu carrera. Esto te mantiene en desarrollo y amplía tus opciones profesionales. Lo que conviene vigilar es la insatisfacción constante: no todas las etapas tienen que traer un ascenso o un desafío nuevo.',
+      low: 'Valoras más la tranquilidad de hacer bien lo que ya dominas que la búsqueda constante de nuevos desafíos. Esto te da constancia y menos presión. Lo que conviene vigilar es que tus habilidades se queden desactualizadas con el tiempo.',
+      tips: [
+        'Acuerda con tus superiores una meta de desarrollo para los próximos meses.',
+        'Reserva algunas horas al mes para aprender algo útil para tu área.',
+        'En los procesos de selección, pregunta cómo funcionan los ascensos y las capacitaciones.',
+      ],
+      examples: ['Empresas en expansión', 'Programas para recién graduados', 'Consultoras', 'Empresas con un plan de carrera estructurado'],
+    },
+    autonomy: {
+      label: 'Autonomía',
+      desc: 'Cuánto valoras tener libertad para decidir cómo, cuándo y dónde trabajar.',
+      high: 'Rindes más cuando tienes libertad para organizar el trabajo a tu manera. Esto favorece la iniciativa y la responsabilidad por los resultados. Lo que conviene vigilar es tener dificultades en ambientes muy controlados o con tareas que exigen seguir procesos rígidos.',
+      low: 'Te sientes bien con indicaciones claras y con alguien que te ayude a definir las prioridades. Esto facilita trabajar en equipo y seguir estándares de calidad. Lo que conviene vigilar es depender demasiado de que te den dirección y perder oportunidades de mostrar iniciativa.',
+      tips: [
+        'Negocia metas claras con tus superiores a cambio de más libertad sobre la forma de alcanzarlas.',
+        'En las entrevistas, pregunta cómo se toman las decisiones en el día a día del equipo.',
+        'Cuando tengas más libertad, crea tu propia rutina y ponle un plazo a cada etapa.',
+      ],
+      examples: ['Trabajo independiente', 'Emprendimiento', 'Investigación', 'Equipos remotos con metas claras'],
+    },
+    stability: {
+      label: 'Estabilidad',
+      desc: 'Cuánto valoras la seguridad, la previsibilidad y la continuidad en el trabajo y en los ingresos.',
+      high: 'Te sientes mejor cuando sabes qué esperar: ingresos garantizados, reglas claras y una rutina previsible. Esto te da tranquilidad para planificar tu vida personal. Lo que conviene vigilar es dejar pasar oportunidades interesantes por temor a los cambios.',
+      low: 'Manejas bien la incertidumbre y te sientes a gusto cambiando cuando surge algo interesante. Esto te facilita aprovechar nuevas oportunidades. Lo que conviene vigilar es asumir riesgos financieros sin un ahorro que te dé seguridad en los momentos difíciles.',
+      tips: [
+        'Mantén un fondo de ahorro para algunos meses de gastos: da seguridad en cualquier escenario.',
+        'Antes de rechazar un cambio, evalúa el riesgo real y lo que podrías ganar con él.',
+        'Busca estabilidad también en habilidades valoradas por el mercado, y no solo en tu empleo actual.',
+      ],
+      examples: ['Sector público', 'Grandes empresas consolidadas', 'Bancos y aseguradoras', 'Servicios esenciales, como energía, agua y saneamiento'],
+    },
+    recognition: {
+      label: 'Reconocimiento',
+      desc: 'Cuánto te importa que tu esfuerzo y tus resultados se vean y se valoren.',
+      high: 'Te motiva que las personas a tu alrededor noten y valoren tu trabajo. Esto te impulsa a buscar resultados de calidad. Lo que conviene vigilar es depender demasiado de la opinión de los demás para sentir que hiciste un buen trabajo.',
+      low: 'Te satisface el trabajo bien hecho, aunque nadie haga comentarios sobre él. Esto te da independencia y motivación propia. Lo que conviene vigilar es que tus logros queden invisibles y perder oportunidades por no mostrarlos.',
+      tips: [
+        'Registra tus logros a lo largo del año para presentarlos en las conversaciones de evaluación.',
+        'Pide una devolución de forma directa cuando la eches en falta.',
+        'Reconoce también el trabajo de tus colegas: eso crea una cultura de valoración.',
+      ],
+      examples: ['Ventas con metas y premios', 'Comunicación y medios', 'Derecho y consultoría', 'Deportes y artes'],
+    },
+    balance: {
+      label: 'Equilibrio',
+      desc: 'Cuánto valoras tener tiempo y energía para tu vida personal, tu familia, tu salud y el descanso.',
+      high: 'Para ti, el trabajo tiene que caber en la vida, y no al revés. Esto protege tu salud, tus relaciones y tu energía a largo plazo. Lo que conviene vigilar es rechazar etapas más intensas que podrían hacerte crecer, incluso cuando serían temporales.',
+      low: 'Aceptas dedicarte intensamente al trabajo cuando crees que vale la pena. Esto puede acelerar tu carrera y tus proyectos. Lo que conviene vigilar es el desgaste: sin pausas, el cansancio termina afectando tu salud, tus relaciones y tu propio desempeño.',
+      tips: [
+        'Define una hora para terminar de trabajar y avísales a las personas con quienes trabajas.',
+        'En las entrevistas, pregunta por la jornada real, las horas extra y la política de trabajo remoto.',
+        'Anota en tu agenda tus compromisos personales con la misma seriedad que los profesionales.',
+      ],
+      examples: ['Empresas con jornada flexible', 'Trabajo remoto o híbrido', 'Puestos con horario bien definido', 'Trabajo por proyectos o a tiempo parcial'],
+    },
+    collaboration: {
+      label: 'Colaboración',
+      desc: 'Cuánto valoras trabajar en equipo, tener buenas relaciones con tus colegas y un ambiente de ayuda mutua.',
+      high: 'Rindes más cuando intercambias ideas y trabajas junto con otras personas. Un buen clima de equipo es tan importante para ti como la tarea en sí. Lo que conviene vigilar es tener dificultades en trabajos más solitarios o en ambientes muy competitivos.',
+      low: 'Te sientes bien trabajando de forma independiente, con responsabilidades bien definidas. Esto favorece la concentración y la autonomía. Lo que conviene vigilar es aislarte y perderte aportes que solo surgen en el intercambio con otras personas.',
+      tips: [
+        'En los procesos de selección, pide conocer al equipo o pregunta cómo trabaja en el día a día.',
+        'Si prefieres trabajar de forma independiente, acuerda momentos breves de coordinación con el equipo.',
+        'Ofrece ayuda a un colega y pide ayuda cuando la necesites: las dos cosas fortalecen la confianza.',
+      ],
+      examples: ['Equipos multidisciplinarios', 'Empresas con jerarquías más horizontales', 'Hospitales y equipos de salud', 'Agencias y estudios creativos'],
+    },
+    pay: {
+      label: 'Remuneración',
+      desc: 'Cuánto pesan el salario, los beneficios y la posibilidad de ganar más en tus decisiones profesionales.',
+      high: 'Para ti, estar bien pagado es una prioridad clara, ya sea para tener seguridad, libertad o cumplir objetivos personales. Esto te ayuda a negociar con firmeza y a buscar puestos bien valorados. Lo que conviene vigilar es quedarte en trabajos que te desgastan solo por el salario.',
+      low: 'Valoras otros aspectos del trabajo más que el dinero en sí. Esto te da libertad para elegir oportunidades por lo que tienen de interesante. Lo que conviene vigilar es aceptar una remuneración por debajo de lo que vale tu trabajo por no negociar.',
+      tips: [
+        'Investiga la franja salarial de tu puesto antes de negociar un aumento o una oferta.',
+        'Considera el paquete completo: beneficios, bonos, flexibilidad y costos de transporte.',
+        'Define el monto mínimo que necesitas para vivir bien y úsalo como referencia en las negociaciones.',
+      ],
+      examples: ['Sector financiero', 'Ventas con comisión', 'Tecnología', 'Puestos de dirección'],
+    },
+  },
+  resultTitle: 'Lo que más te importa en el trabajo',
+  resultIntro:
+    'Destacamos los tres valores con las puntuaciones más altas. Cuando un trabajo respeta estos valores, lo más probable es que sientas más motivación y satisfacción. Cuando quedan de lado durante mucho tiempo, suele aparecer la insatisfacción, aunque todo lo demás parezca estar bien.',
+  note: 'Este resultado es una herramienta de autoconocimiento basada en tus propias respuestas. No es una prueba psicológica validada y no reemplaza una orientación vocacional o de carrera hecha por un profesional.',
+};
+
+export default t;
